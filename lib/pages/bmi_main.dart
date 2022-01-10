@@ -85,7 +85,7 @@ class _BMIPageState extends State<BMIPage> {
                         100; //ประกาศตัวแปร _heightM มารับค่าส่วนสูง cm แปลงเป็น m
                     var _bmi =
                         double.parse(_weight.text) / (_heightM * _heightM);
-                    _result = _bmi.toStringAsFixed(3);
+                    _result = _bmi.toStringAsFixed(2);
                     if (_bmi > 40) {
                       _result = "อ้วนมากกกกกกกก";
                       _problem = "อันตรายมากที่สุด";
